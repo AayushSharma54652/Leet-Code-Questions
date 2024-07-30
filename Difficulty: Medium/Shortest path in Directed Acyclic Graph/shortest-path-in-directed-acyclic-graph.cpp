@@ -32,8 +32,7 @@ public:
             adj[u].push_back({v, wt});
         }
         // find the topological sort
-        int vis[N];
-        memset(vis, 0, sizeof(vis));
+        int vis[N] = {0};
         stack<int> st;
         for (int i = 0; i < N; i++) {
             if (!vis[i]) {
